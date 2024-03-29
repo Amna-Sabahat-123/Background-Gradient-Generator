@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #a77a31, #a43f86);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    font-size: 2.5rem;
+    border-radius: 18px;
+    border: none;
+    padding: 5px 50px 5px 50px;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.copy-code {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border-left: 10px solid #57a589;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 20px;
+    width: 110%;
+    cursor: pointer;
+}
+
+.alert {
+    display: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 12px;
+    width: 23%;
+    background: rgba(77, 173, 77, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+
+    position: absolute;
+    top: 70%;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 1rem;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 1.3rem;
+    }
+    button {
+        font-size: 0.8rem;
+        padding: 15px 50px 15px 50px;
+    }
+    h2{
+        font-size: 16px;
+        margin-top: 2rem;
+    }
+    .copy-code {
+        width: 100%;
+        font-size: 10.5px;
+    }
+    .alert{
+        width: 46%;
+        font-size: 16px;
+        padding: 5px 10px 5px 10px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 2.3rem;
+    }
+    button {
+        font-size: 1.8rem;
+        padding: 15px 50px 15px 50px;
+    }
+    h2{
+        font-size: 23px;
+        margin-top: 2rem;
+    }
+    .copy-code {
+        width: 85%;
+        font-size: 16px;
+    }
+    .alert{
+        width: 46%;
+        font-size: 16px;
+        padding: 5px 10px 5px 10px;
+        top: 72%;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
